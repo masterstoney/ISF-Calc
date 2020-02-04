@@ -20,6 +20,7 @@
 		D2D158FE23E8DB3000A6A604 /* DataEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */; };
 		D2D1590023E8DD3800A6A604 /* EntryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */; };
 		D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1590123E8E1BA00A6A604 /* SectionView.swift */; };
+		D2D1590423E91EE500A6A604 /* DataEntryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1590323E91EE500A6A604 /* DataEntryDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryTableViewCell.swift; sourceTree = "<group>"; };
 		D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryOptions.swift; sourceTree = "<group>"; };
 		D2D1590123E8E1BA00A6A604 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		D2D1590323E91EE500A6A604 /* DataEntryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */,
+				D2D1590323E91EE500A6A604 /* DataEntryDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				D237D95A23E8C4EA003E3757 /* TabViewController.swift in Sources */,
 				D237D95C23E8C577003E3757 /* RecordsViewController.swift in Sources */,
 				D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */,
+				D2D1590423E91EE500A6A604 /* DataEntryDataSource.swift in Sources */,
 				D237D95523E8C483003E3757 /* ResultViewController.swift in Sources */,
 				D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */,
 				D237D94823E8C40C003E3757 /* ISF_Calc.xcdatamodeld in Sources */,

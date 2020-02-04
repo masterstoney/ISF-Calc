@@ -8,58 +8,87 @@
 
 import UIKit
 
-class CalculatorViewController: UITableViewController {
+class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Calculator"
-        self.tableView.register(DataEntryTableViewCell.self, forCellReuseIdentifier: "cellId")
-        let footerView = UIView()
-        view.backgroundColor = .secondarySystemBackground
-        self.tableView.tableFooterView = footerView
+        setupView()
+        self.entryOptions = dataSource.entryOptions
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Compute", style: .done, target: self, action: #selector(calculateISF))
     }
     
     //MARK: Properties
     
-    private var entryOptions: EntryOptions = EntryOptions()
+    private weak var entryOptions: EntryOptions?
     
+    private var dataSource: DataEntryDataSource = DataEntryDataSource()
     
-    //MARK: TableView DataSource and Delegate methods
+    private lazy var dataEntryTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = .secondarySystemBackground
+        tableView.register(DataEntryTableViewCell.self, forCellReuseIdentifier: "cellId")
+        tableView.delegate = self
+        tableView.dataSource = dataSource
+        let footerView = UIView()
+        footerView.backgroundColor = .secondarySystemBackground
+        tableView.tableFooterView = footerView
+        return tableView
+    }()
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return entryOptions.sections().count
+    private var segmentedControl: UISegmentedControl = {
+        let segmentedControl = UISegmentedControl(items: ["Insulin Per Dose", "Total Daily Insulin"])
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.addTarget(self, action: #selector(switchForm(_:)), for: .valueChanged)
+        return segmentedControl
+    }()
+    
+    //MARK: View Setup Methods
+    
+    private func setupView() {
+        
+        view.backgroundColor = .secondarySystemBackground
+        view.addSubview(segmentedControl)
+        view.addSubview(dataEntryTableView)
+        
+        segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+        segmentedControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        dataEntryTableView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 5).isActive = true
+        dataEntryTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        dataEntryTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        dataEntryTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5).isActive = true
+        
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return entryOptions.options()[section].count
+    @objc func switchForm(_ sender: UISegmentedControl) {
+        dataSource.entryOptions.formType = EntryOptions.FormType(rawValue: sender.selectedSegmentIndex)!
+        dataEntryTableView.reloadData()
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! DataEntryTableViewCell
-        let option = entryOptions.options()[indexPath.section][indexPath.row]
-        cell.detailLabel.text = option.title
-        cell.dataTextField.placeholder = option.unit
-        cell.selectionStyle = .none
-        return cell
+    @objc func calculateISF() {
+        let navController = UINavigationController(rootViewController: ResultViewController())
+        splitViewController?.showDetailViewController(navController, sender: self)
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+}
+    
+    //MARK: TableView Delegate methods
+extension CalculatorViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = SectionView()
-        let sectionInfo = entryOptions.sections()[section]
+        let sectionInfo = entryOptions!.sections()[section]
         headerView.populateView(title: sectionInfo.title, description: sectionInfo.description)
         return headerView
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 65
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let navController = UINavigationController(rootViewController: ResultViewController())
-        splitViewController?.showDetailViewController(navController, sender: self)
-        print(indexPath.row)
     }
 
 }
