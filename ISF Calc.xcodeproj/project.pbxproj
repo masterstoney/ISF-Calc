@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		D237D93E23E8C40C003E3757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D93D23E8C40C003E3757 /* AppDelegate.swift */; };
 		D237D94023E8C40C003E3757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D93F23E8C40C003E3757 /* SceneDelegate.swift */; };
-		D237D94223E8C40C003E3757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D94123E8C40C003E3757 /* ViewController.swift */; };
+		D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D94123E8C40C003E3757 /* CalculatorViewController.swift */; };
 		D237D94523E8C40C003E3757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D237D94323E8C40C003E3757 /* Main.storyboard */; };
 		D237D94823E8C40C003E3757 /* ISF_Calc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D237D94623E8C40C003E3757 /* ISF_Calc.xcdatamodeld */; };
 		D237D94A23E8C40D003E3757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D237D94923E8C40D003E3757 /* Assets.xcassets */; };
 		D237D94D23E8C40D003E3757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D237D94B23E8C40D003E3757 /* LaunchScreen.storyboard */; };
+		D237D95523E8C483003E3757 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D95423E8C483003E3757 /* ResultViewController.swift */; };
+		D237D95A23E8C4EA003E3757 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D95923E8C4EA003E3757 /* TabViewController.swift */; };
+		D237D95C23E8C577003E3757 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D95B23E8C577003E3757 /* RecordsViewController.swift */; };
+		D2D158FE23E8DB3000A6A604 /* DataEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */; };
+		D2D1590023E8DD3800A6A604 /* EntryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */; };
+		D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1590123E8E1BA00A6A604 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D237D93A23E8C40C003E3757 /* ISF Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISF Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D237D93D23E8C40C003E3757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D237D93F23E8C40C003E3757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D237D94123E8C40C003E3757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D237D94123E8C40C003E3757 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		D237D94423E8C40C003E3757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D237D94723E8C40C003E3757 /* ISF_Calc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ISF_Calc.xcdatamodel; sourceTree = "<group>"; };
 		D237D94923E8C40D003E3757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D237D94C23E8C40D003E3757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D237D94E23E8C40D003E3757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D237D95423E8C483003E3757 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		D237D95923E8C4EA003E3757 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		D237D95B23E8C577003E3757 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryTableViewCell.swift; sourceTree = "<group>"; };
+		D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryOptions.swift; sourceTree = "<group>"; };
+		D2D1590123E8E1BA00A6A604 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +72,9 @@
 			children = (
 				D237D93D23E8C40C003E3757 /* AppDelegate.swift */,
 				D237D93F23E8C40C003E3757 /* SceneDelegate.swift */,
-				D237D94123E8C40C003E3757 /* ViewController.swift */,
+				D237D95823E8C4B9003E3757 /* Model */,
+				D237D95723E8C4B3003E3757 /* View */,
+				D237D95623E8C4AC003E3757 /* Controller */,
 				D237D94323E8C40C003E3757 /* Main.storyboard */,
 				D237D94923E8C40D003E3757 /* Assets.xcassets */,
 				D237D94B23E8C40D003E3757 /* LaunchScreen.storyboard */,
@@ -68,6 +82,34 @@
 				D237D94623E8C40C003E3757 /* ISF_Calc.xcdatamodeld */,
 			);
 			path = "ISF Calc";
+			sourceTree = "<group>";
+		};
+		D237D95623E8C4AC003E3757 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D237D94123E8C40C003E3757 /* CalculatorViewController.swift */,
+				D237D95923E8C4EA003E3757 /* TabViewController.swift */,
+				D237D95B23E8C577003E3757 /* RecordsViewController.swift */,
+				D237D95423E8C483003E3757 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D237D95723E8C4B3003E3757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */,
+				D2D1590123E8E1BA00A6A604 /* SectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D237D95823E8C4B9003E3757 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D237D94223E8C40C003E3757 /* ViewController.swift in Sources */,
+				D237D95A23E8C4EA003E3757 /* TabViewController.swift in Sources */,
+				D237D95C23E8C577003E3757 /* RecordsViewController.swift in Sources */,
+				D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */,
+				D237D95523E8C483003E3757 /* ResultViewController.swift in Sources */,
+				D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */,
 				D237D94823E8C40C003E3757 /* ISF_Calc.xcdatamodeld in Sources */,
+				D2D1590023E8DD3800A6A604 /* EntryOptions.swift in Sources */,
 				D237D93E23E8C40C003E3757 /* AppDelegate.swift in Sources */,
+				D2D158FE23E8DB3000A6A604 /* DataEntryTableViewCell.swift in Sources */,
 				D237D94023E8C40C003E3757 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CGXTTVKR2;
 				INFOPLIST_FILE = "ISF Calc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CGXTTVKR2;
 				INFOPLIST_FILE = "ISF Calc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
