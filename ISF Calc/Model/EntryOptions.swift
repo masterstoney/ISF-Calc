@@ -61,18 +61,22 @@ class EntryOptions {
     
     /**Retrieve all available data entry options*/
     func options() -> [[EntryDetails]] {
-        if formType == .insulinPerDose {
+        switch formType {
+        case .insulinPerDose:
             return longFormData
+        case .totalDailyInsulin:
+            return shortFormData
         }
-        return shortFormData
     }
     
     /**Retrieve the information for a tableview section*/
     func sections() -> [SectionInfo] {
-        if formType == .insulinPerDose {
+        switch formType {
+        case .insulinPerDose:
             return longFormsectionData
+        case .totalDailyInsulin:
+            return shortFormSectionData
         }
-        return shortFormSectionData
     }
     
 }

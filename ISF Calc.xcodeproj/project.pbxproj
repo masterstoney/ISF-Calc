@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20A5E1723FB73D300EBCCFC /* SF-Compact-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D20A5E1623FB73D300EBCCFC /* SF-Compact-Display-Medium.otf */; };
 		D237D93E23E8C40C003E3757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D93D23E8C40C003E3757 /* AppDelegate.swift */; };
 		D237D94023E8C40C003E3757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D93F23E8C40C003E3757 /* SceneDelegate.swift */; };
 		D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D94123E8C40C003E3757 /* CalculatorViewController.swift */; };
@@ -21,9 +22,11 @@
 		D2D1590023E8DD3800A6A604 /* EntryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */; };
 		D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1590123E8E1BA00A6A604 /* SectionView.swift */; };
 		D2D1590423E91EE500A6A604 /* DataEntryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1590323E91EE500A6A604 /* DataEntryDataSource.swift */; };
+		D2D1590623EDE0EB00A6A604 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1590523EDE0EB00A6A604 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D20A5E1623FB73D300EBCCFC /* SF-Compact-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Medium.otf"; sourceTree = "<group>"; };
 		D237D93A23E8C40C003E3757 /* ISF Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISF Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D237D93D23E8C40C003E3757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D237D93F23E8C40C003E3757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		D2D158FF23E8DD3800A6A604 /* EntryOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryOptions.swift; sourceTree = "<group>"; };
 		D2D1590123E8E1BA00A6A604 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		D2D1590323E91EE500A6A604 /* DataEntryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryDataSource.swift; sourceTree = "<group>"; };
+		D2D1590523EDE0EB00A6A604 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20A5E1423FB737D00EBCCFC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D20A5E1523FB738400EBCCFC /* Fonts */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D20A5E1523FB738400EBCCFC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D20A5E1623FB73D300EBCCFC /* SF-Compact-Display-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D237D93123E8C40C003E3757 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +94,7 @@
 			children = (
 				D237D93D23E8C40C003E3757 /* AppDelegate.swift */,
 				D237D93F23E8C40C003E3757 /* SceneDelegate.swift */,
+				D20A5E1423FB737D00EBCCFC /* Helpers */,
 				D237D95823E8C4B9003E3757 /* Model */,
 				D237D95723E8C4B3003E3757 /* View */,
 				D237D95623E8C4AC003E3757 /* Controller */,
@@ -102,6 +123,7 @@
 			children = (
 				D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */,
 				D2D1590123E8E1BA00A6A604 /* SectionView.swift */,
+				D2D1590523EDE0EB00A6A604 /* ResultView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +197,7 @@
 			files = (
 				D237D94D23E8C40D003E3757 /* LaunchScreen.storyboard in Resources */,
 				D237D94A23E8C40D003E3757 /* Assets.xcassets in Resources */,
+				D20A5E1723FB73D300EBCCFC /* SF-Compact-Display-Medium.otf in Resources */,
 				D237D94523E8C40C003E3757 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +214,7 @@
 				D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */,
 				D2D1590423E91EE500A6A604 /* DataEntryDataSource.swift in Sources */,
 				D237D95523E8C483003E3757 /* ResultViewController.swift in Sources */,
+				D2D1590623EDE0EB00A6A604 /* ResultView.swift in Sources */,
 				D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */,
 				D237D94823E8C40C003E3757 /* ISF_Calc.xcdatamodeld in Sources */,
 				D2D1590023E8DD3800A6A604 /* EntryOptions.swift in Sources */,
