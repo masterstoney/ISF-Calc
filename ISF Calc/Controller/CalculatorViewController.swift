@@ -90,7 +90,7 @@ extension CalculatorViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 65
     }
-
+    
 }
 
     //MARK: UISplitViewController Delegate Methods

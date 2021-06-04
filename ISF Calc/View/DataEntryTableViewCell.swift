@@ -44,6 +44,7 @@ class DataEntryTableViewCell: UITableViewCell {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.textAlignment = .right
+        textField.keyboardType = .numberPad
         return textField
     }()
     
@@ -51,20 +52,42 @@ class DataEntryTableViewCell: UITableViewCell {
     
     private func setupView() {
         
-        addSubview(detailLabel)
-        addSubview(dataTextField)
+        contentView.addSubview(detailLabel)
+        contentView.addSubview(dataTextField)
         
-        detailLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        detailLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
+        detailLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        detailLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15).isActive = true
         detailLabel.trailingAnchor.constraint(equalTo: dataTextField.leadingAnchor, constant: -5).isActive = true
         detailLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 44).isActive = true
-        detailLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        detailLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         
-        dataTextField.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        dataTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
-        dataTextField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.25).isActive = true
-        dataTextField.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        dataTextField.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        dataTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15).isActive = true
+        dataTextField.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.25).isActive = true
+        dataTextField.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        setupNextButton()
+    }
+    
+    private func setupNextButton() {
+        
+        let nextToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        nextToolbar.barStyle = .default
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let next: UIBarButtonItem = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(nextField))
+        let items = [flexSpace,next]
+        nextToolbar.items = items
+        nextToolbar.sizeToFit()
+        
+        dataTextField.inputAccessoryView = nextToolbar
         
     }
+    
+    @objc func nextField() {
+        
+        //should go to next field
+        
+    }
+    
+    
     
 }

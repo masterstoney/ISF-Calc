@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D20A5E1723FB73D300EBCCFC /* SF-Compact-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D20A5E1623FB73D300EBCCFC /* SF-Compact-Display-Medium.otf */; };
+		D20A5E1923FB75A500EBCCFC /* GlucoseUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A5E1823FB75A500EBCCFC /* GlucoseUnitView.swift */; };
+		D20A5E1B23FB7B6A00EBCCFC /* SensitivityFactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A5E1A23FB7B6A00EBCCFC /* SensitivityFactorView.swift */; };
+		D20A5E1D23FB7D7D00EBCCFC /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A5E1C23FB7D7D00EBCCFC /* UILabelExtension.swift */; };
+		D20A5E1F23FB858700EBCCFC /* ScaleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A5E1E23FB858700EBCCFC /* ScaleDetailView.swift */; };
 		D237D93E23E8C40C003E3757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D93D23E8C40C003E3757 /* AppDelegate.swift */; };
 		D237D94023E8C40C003E3757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D93F23E8C40C003E3757 /* SceneDelegate.swift */; };
 		D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D94123E8C40C003E3757 /* CalculatorViewController.swift */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		D20A5E1623FB73D300EBCCFC /* SF-Compact-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Medium.otf"; sourceTree = "<group>"; };
+		D20A5E1823FB75A500EBCCFC /* GlucoseUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseUnitView.swift; sourceTree = "<group>"; };
+		D20A5E1A23FB7B6A00EBCCFC /* SensitivityFactorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivityFactorView.swift; sourceTree = "<group>"; };
+		D20A5E1C23FB7D7D00EBCCFC /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		D20A5E1E23FB858700EBCCFC /* ScaleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleDetailView.swift; sourceTree = "<group>"; };
 		D237D93A23E8C40C003E3757 /* ISF Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISF Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D237D93D23E8C40C003E3757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D237D93F23E8C40C003E3757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D20A5E1523FB738400EBCCFC /* Fonts */,
+				D20A5E1C23FB7D7D00EBCCFC /* UILabelExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,6 +133,9 @@
 				D2D158FD23E8DB3000A6A604 /* DataEntryTableViewCell.swift */,
 				D2D1590123E8E1BA00A6A604 /* SectionView.swift */,
 				D2D1590523EDE0EB00A6A604 /* ResultView.swift */,
+				D20A5E1E23FB858700EBCCFC /* ScaleDetailView.swift */,
+				D20A5E1A23FB7B6A00EBCCFC /* SensitivityFactorView.swift */,
+				D20A5E1823FB75A500EBCCFC /* GlucoseUnitView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,10 +226,14 @@
 				D2D1590223E8E1BA00A6A604 /* SectionView.swift in Sources */,
 				D2D1590423E91EE500A6A604 /* DataEntryDataSource.swift in Sources */,
 				D237D95523E8C483003E3757 /* ResultViewController.swift in Sources */,
+				D20A5E1B23FB7B6A00EBCCFC /* SensitivityFactorView.swift in Sources */,
+				D20A5E1F23FB858700EBCCFC /* ScaleDetailView.swift in Sources */,
 				D2D1590623EDE0EB00A6A604 /* ResultView.swift in Sources */,
+				D20A5E1D23FB7D7D00EBCCFC /* UILabelExtension.swift in Sources */,
 				D237D94223E8C40C003E3757 /* CalculatorViewController.swift in Sources */,
 				D237D94823E8C40C003E3757 /* ISF_Calc.xcdatamodeld in Sources */,
 				D2D1590023E8DD3800A6A604 /* EntryOptions.swift in Sources */,
+				D20A5E1923FB75A500EBCCFC /* GlucoseUnitView.swift in Sources */,
 				D237D93E23E8C40C003E3757 /* AppDelegate.swift in Sources */,
 				D2D158FE23E8DB3000A6A604 /* DataEntryTableViewCell.swift in Sources */,
 				D237D94023E8C40C003E3757 /* SceneDelegate.swift in Sources */,
