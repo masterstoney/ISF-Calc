@@ -8,8 +8,8 @@ I was having a conversation with a doctor about technology in the medical indust
 ## Screenshots
 
 <p align="center">
-  <img src="homeScreen.PNG" alt="Long entry form in dark mode" width="375" height="812">
-  <img src="Screenshots/quickCalcScreen.PNG" alt="Quick entry form in dark mode" width="375" height="812">
+  <img src="Screenshots/homeScreen.PNG" alt="Long entry form in dark mode" width="375" height="812">
+  <img src="Screenshots/quickCalcScreen.jpeg" alt="Quick entry form in dark mode" width="375" height="812">
   <img src="Screenshots/keyboardPresent.PNG" alt="Keyboard present on long entry from screen" width="375" height="812">
   <img src="Screenshots/resultScreen.PNG" alt="Result screen in dark mode" width="375" height="812">
 </p>
